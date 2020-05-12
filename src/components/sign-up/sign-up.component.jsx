@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import FormInput from './../form-input';
-import CustomButton from './../custom-button';
+import FormInput from '../form-input/form-input.component';
+import CustomButton from '../custom-button/custom-button.component';
 
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
@@ -80,8 +80,8 @@ class SignUp extends Component {
 						required
 					/>
 					<FormInput
-						type="confirmPassword"
-						name="pasconfirmPasswordsword"
+						type="password"
+						name="confirmPassword"
 						value={confirmPassword}
 						onChange={this.handleChange}
 						label="Confirm Password"
